@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;400;500;600&family=Roboto:wght@400;500;700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container{
+    background-image: url(/Assets/forest-bg.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    background: transparent;
+    background: rgba(43, 43, 43, 0.1);
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h2{
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.email-field, .password-field{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.email-field input, .password-field input{
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid whitesmoke;
+    width: 80%;
+    height: 2rem;
+    color: whitesmoke;
+}
+
+::placeholder{
+    color: whitesmoke;
+    opacity: 80%;
+    position: absolute;
+    left: 10px;
+    bottom: 3px;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9rem;
+}
+
+box-icon{
+    position: absolute;
+    width: 35px;
+    left: 80%;
+    top: 10%;
+    padding-right: 0.75rem;
+}
+
+.remember-forget{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 2rem;
+}
+
+.remember{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.remember input {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+    background: rgba(43, 43, 43, 0.2);
+    color:black;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.25rem;
+}
+
+.remember input::after{
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: white;
+    display: none;
+    font-size: 0.75rem;
+}
+
+.remember input:checked {
+    background: rgba(40,40,40,0.7);
+}
+
+.remember input:checked::after{
+    display: block;
+}
+ .remember label{
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.forget a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+button{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    border-radius: 3px;
+    padding: 0.5rem 0;
+    margin-bottom: 0.5rem;
+}
+
+.signup{
+    text-align: center;
+}
+span a{
+    text-decoration: none;
+    font-weight: 700;
+    color: whitesmoke;
+    margin-left: 5px;
+}
+
+@media only screen and (max-width: 480px) {
+    body{
+        font-size: 0.8rem;
+    }
+    .form{
+        width: 95vw;
+        height: auto;
+        padding: 2rem 0;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .form{
+        width: 50vw;
+        height: auto;
+        padding: 2rem 0;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .form{
+        width: 40vw;
+        height: auto;
+        padding: 2rem 0;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .form{
+        width: 30vw;
+        height: auto;
+        padding: 2rem 0;
+    }
+}

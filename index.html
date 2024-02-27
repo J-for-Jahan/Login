@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://kit.fontawesome.com/1e7f9344f0.js" crossorigin="anonymous"></script>
+    <title>Login Form</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="form">
+            <h2 class="title">Login</h2>
+            <form>
+                <div class="email-field">
+                    <input type="email" placeholder="Username">
+                    <box-icon type='solid' color="white" name='user-circle'></box-icon>
+                </div> 
+                <div class="password-field">
+                    <input type="password" placeholder="Password">
+                    <box-icon name='key' color="white" type='solid' ></box-icon>
+                </div>
+                <div class="remember-forget">
+                    <div class="remember">
+                        <input id="remember" type="checkbox" value="remember">
+                        <label for="remember">Remember Me</label>
+                    </div>
+                    <div class="forget"><a href="blank">Forgot Password?</a></div>
+                </div>
+                <button>Login</button>
+                <p class="signup">Don't you have an account?<span><a href="http://" target="_blank" rel="noopener noreferrer">Sign Up</a></span></p>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
